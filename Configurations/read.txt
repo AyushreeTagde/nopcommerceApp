@@ -1,0 +1,33 @@
+7. Run test on desire browser/cross browser/parallel
+    Commands: To run test on desire browser
+        pytest -v -s testCases/test_login.py --browser firefox
+        pytest -v -s testCases/test_login.py --browser chrome
+    Commands: To run test parallel
+                pytest -v -s -n=2 testCases/test_login.py --browser chrome
+
+8. Generate pytest html report
+    pytest -v -s -n=2 --html=Reports\report.html testCases/test_login.py --browser chrome
+
+9. Automating data driven test cases
+
+
+Run.bat creation
+
+//Run from command prompt
+1. Copy project path --- C:\Users\Ayushree\PycharmProjects\nopcommerceApp
+
+Create run.bat file > edit in notepad.
+Write all run statements.
+rem (lower case) is for remove or not run command
+At a time only one can execute
+
+
+DEvOps
+dev team
+testing team
+git is local depository
+github is remote depository
+
+dev or tester keep their code in local git, then code is PUSH from git to github.
+DevOps will take the code from github via Jenkin tool (Jenkin is a continous integration tool)
+and release build and execute sanity testcases
