@@ -31,6 +31,7 @@ class Test_002_DDT_Login():
 
             self.lp.setusername(self.user)
             self.lp.setpassword(self.password)
+            time.sleep(3)
             self.lp.clicklogin()
             time.sleep(3)
 

@@ -39,13 +39,13 @@ class Test_003_AddCustomer:
         self.email = random_generator() + "@gmail.com"
         self.addcust.setEmail(self.email)
         self.addcust.setPassword("test123")
-        self.addcust.setFirstName("Pavan")
-        self.addcust.setLastName("Kumar")
-        self.addcust.setGender("Male")
+        self.addcust.setFirstName("Ayushree")
+        self.addcust.setLastName("Tagde")
+        self.addcust.setGender("Female")
         self.addcust.setDob("7/05/1985")  # Format: D / MM / YYY
         self.addcust.setCompanyName("busyQA")
         # self.addcust.setNewsletter("Test store 2")
-        # newsletter is similar to roles, but not executed yet bcz of incorrect xpath
+        # newsletter is similar to roles, but not executed yet bcz of inc xpath
         # (will do later)
         self.addcust.setCustomerRoles("Guests")
         self.addcust.setManagerOfVendor("Vendor 2")

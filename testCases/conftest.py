@@ -1,3 +1,5 @@
+# For multi browser testing // html report data
+
 from selenium import webdriver
 import pytest
 

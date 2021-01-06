@@ -8,8 +8,6 @@
 8. Generate pytest html report
     pytest -v -s -n=2 --html=Reports\report.html testCases/test_login.py --browser chrome
 
-9. Automating data driven test cases
-
 
 Run.bat creation
 
@@ -21,6 +19,11 @@ Write all run statements.
 rem (lower case) is for remove or not run command
 At a time only one can execute
 
+pytest -s -v -m "Sanity" --html=./Reports\report.html testCases/ --browser chrome
+rem pytest -s -v -m "Sanity or regression" --html=./Reports\report.html testCases/ --browser chrome
+rem pytest -s -v -m "Sanity and regression" --html=./Reports\report.html testCases/ --browser chrome
+rem pytest -s -v -m "regression" --html=./Reports\report.html testCases/ --browser chrome
+
 
 DEvOps
 dev team
@@ -31,3 +34,11 @@ github is remote depository
 dev or tester keep their code in local git, then code is PUSH from git to github.
 DevOps will take the code from github via Jenkin tool (Jenkin is a continous integration tool)
 and release build and execute sanity testcases
+
+
+
+
+ALLURE COMMAND:
+pytest -v -s --alluredir="C:\Users\Ayushree\PycharmProjects\nopcommerceApp\Reports\AlReport" testCases/ --browser chrome
+
+
